@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: rgb(9, 84, 84);
+}
+
+/* Header element */
+#header {
+    position: fixed;
+    top: 0;
+    min-height: 7.5rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-img {
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+    margin: 2rem;
+}
+
+#page-name {
+    width: 30%;
+    margin: 2rem 2rem 2rem 0;
+    font-size: 4rem;
+    color: #999ba0;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-weight: 300;
+}
+
+#nav-bar{
+    width: 60%;
+    display: flex;
+    padding-left: 30%;
+    justify-content: space-evenly;
+    float: right;
+}
+
+.nav-link {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #999ba0;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* Main Page */
+#main {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Video Section */
+#video-section {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pricing Section */
+#pricing {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 5rem 0;
+    width: 90%;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #fff;
+    background-color: aqua;
+}
+
+.price {
+    list-style-type: none;
+    color: #999ba0;
+    font-size: 1.8rem;
+}
+
+li {
+    border-bottom: 1px solid #fff;
+    padding: 1rem;
+}
+
+.button {
+    color: #999ba0;
+    text-decoration: none;
+}
+
+/* Interested Button */
+#interested {
+    margin: 0 auto;
+}
+
+label {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #999ba0;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+#email {
+    height: 2.5rem;
+    text-align: center;
+}
+
+#submit {
+    color: #999ba0;
+    background-color: rgb(9, 84, 84);
+    width: auto;
+    margin-top: 0.5rem;
+}
+
+/* Media query */
+@media (max-width: 750px){
+    #nav-bar {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+}
